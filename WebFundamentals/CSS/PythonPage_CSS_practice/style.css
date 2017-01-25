@@ -1,3 +1,6 @@
+/*{
+  outline: 1px dotted red;
+}*/
 #wrapper{
   width: 970px;
   height: auto;
@@ -9,7 +12,8 @@ color: White;
 margin-right: 5px;
 }
 #header{
-
+width: 970px;
+height: auto;
 }
 #logo{
 width: auto;
@@ -57,7 +61,7 @@ margin: 10px 20px;
 color: white;
 }
 #main1{
-width: 970px;
+width: auto;
 height: auto;
 }
 #sidebar{
@@ -66,23 +70,48 @@ height: auto;
 display: inline-block;
 text-align: center;
 }
+h2{
+color: Yellow;
+font-style: italic;
+font-weight: lighter;
+margin: 5px;
+}
 #zentext{
-width: 400;
+width: 630px;
 height: auto;
 display: inline-block;
 text-align: center;
+vertical-align: top;
 color: white;
 }
 #main2{
 background-color: white;
 height: 250px;
+padding-top: 15px;
 }
 #gettingstarted{
-
+width: 350px;
+height: auto;
+display: inline-block;
+text-align: center;
+margin-left: 80px;
+vertical-align: top;
 }
 #applications{
-
+width: 350px;
+height: auto;
+display: inline-block;
+text-align: center;
+margin-left: 50px;
+vertical-align: top;
+}
+h5{
+display: inline-block;
+margin: 10px 85px;
+}
+p{
+text-align: center;
 }
 #footer{
-
+color: Gray;
 }
