@@ -1,0 +1,46 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+}
+#wrapper{
+ width: 960px;
+ height: 960px;
+ background-color: #D6D1B1;
+ margin: 0px auto;
+}
+#header{
+ height: 150px;
+ width: auto;
+ display: block;
+ margin: 20px;
+ }
+
+#leftcat{
+  display: inline-block;
+  margin: 20px;
+  margin-left: 140px;
+}
+
+#headertext{
+  display: inline-block;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#rightcat{
+display: inline-block;
+margin: 20px;
+}
+
+#catgrid{
+ height: 710px;
+ width: 860px;
+ background-color: #D6D1B1;
+ margin: 50px;
+}
+.cats{
+ height: 200px;
+ width: 210px;
+ background-color: yellow;
+}

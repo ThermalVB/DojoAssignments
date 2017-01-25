@@ -1,0 +1,78 @@
+#wrapper{
+  width: 970px;
+  height: auto;
+  background: linear-gradient(to bottom right, #245077, #3273AB);
+}
+#textsizeselector{
+text-align: right;
+color: White;
+}
+#header{
+
+}
+#logo{
+width: auto;
+height: auto;
+display: inline-block;
+}
+#searchbar{
+width: 250px;
+height: 50px;
+border-radius: 10px;
+display: inline-block;
+float: right;
+background-color: #444444;
+margin: 20px;
+}
+#searchfield{
+width: 120px;
+height: 20px;
+display: inline-block;
+text-align: center;
+background: white;
+margin-left: 40px;
+margin-top: 15px;
+border-radius: 5px;
+}
+#submitbutton{
+width: 50px;
+height: 30px;
+display: inline-block;
+text-align: center;
+background-color: #245076;
+margin: 5px 10px;
+border-radius: 10px;
+}
+#topbar{
+width: 900px;
+height: 50px;
+background-color: #457DAD;
+border-radius: 25px;
+margin-left: 30px;
+}
+#main1{
+width: auto;
+height: auto;
+}
+#sidebar{
+width: 250px;
+height: auto;
+display: inline-block;
+text-align: center;
+}
+#zentext{
+display: inline-block;
+
+}
+#main2{
+
+}
+#gettingstarted{
+
+}
+#applications{
+
+}
+#footer{
+
+}

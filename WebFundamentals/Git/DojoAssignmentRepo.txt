@@ -1,0 +1,96 @@
+:\Users\Therm\Desktop>cd DojoAssignments
+
+C:\Users\Therm\Desktop\DojoAssignments>git init
+Initialized empty Git repository in C:/Users/Therm/Desktop/DojoAssignments/.git/
+
+C:\Users\Therm\Desktop\DojoAssignments>git add .
+
+C:\Users\Therm\Desktop\DojoAssignments>git commit -m "commiting all dojoassignments DIRs"
+[master (root-commit) b3c3d6e] commiting all dojoassignments DIRs
+ 11 files changed, 2 insertions(+)
+ create mode 100644 MEAN/about.txt
+ create mode 100644 Python/about.txt
+ create mode 100644 WebFundamentals/CSS/about.txt
+ create mode 100644 WebFundamentals/Git/about.txt
+ create mode 160000 WebFundamentals/Git/new_project
+ create mode 160000 WebFundamentals/Git/test
+ create mode 100644 WebFundamentals/HTML/about.txt
+ create mode 100644 WebFundamentals/HTML/indentation.html
+ create mode 100644 WebFundamentals/Javascript/about.txt
+ create mode 100644 WebFundamentals/about.txt
+ create mode 100644 netCore/about.txt
+
+C:\Users\Therm\Desktop\DojoAssignments>git remote add origin https://github.com/ThermalVB/DojoAssignments.git
+
+C:\Users\Therm\Desktop\DojoAssignments>git push -u origin master
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 663 bytes | 0 bytes/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+Branch master set up to track remote branch master from origin.
+To https://github.com/ThermalVB/DojoAssignments.git
+ * [new branch]      master -> master
+
+C:\Users\Therm\Desktop\DojoAssignments>touch readme.md
+'touch' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Therm\Desktop\DojoAssignments>copy NUL readme.md
+        1 file(s) copied.
+
+C:\Users\Therm\Desktop\DojoAssignments>git add .
+
+C:\Users\Therm\Desktop\DojoAssignments>git log
+commit b3c3d6e5e48c6ec9ac13bbe7e72d0442b47312e9
+Author: ThermalVB <wyatt.horejsi@gmail.com>
+Date:   Mon Jan 23 16:00:41 2017 -0800
+
+    commiting all dojoassignments DIRs
+
+C:\Users\Therm\Desktop\DojoAssignments>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   readme.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+        modified:   WebFundamentals/Git/test (untracked content)
+
+
+C:\Users\Therm\Desktop\DojoAssignments>git commit -m "added readme.md"
+[master aea3f51] added readme.md
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 readme.md
+
+C:\Users\Therm\Desktop\DojoAssignments>git push -u origin master
+Counting objects: 2, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 266 bytes | 0 bytes/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+Branch master set up to track remote branch master from origin.
+To https://github.com/ThermalVB/DojoAssignments.git
+   b3c3d6e..aea3f51  master -> master
+
+C:\Users\Therm\Desktop\DojoAssignments>git log
+commit aea3f51d451552848b9ba0fdcb6c5c238847a3f3
+Author: ThermalVB <wyatt.horejsi@gmail.com>
+Date:   Mon Jan 23 16:04:09 2017 -0800
+
+    added readme.md
+
+commit b3c3d6e5e48c6ec9ac13bbe7e72d0442b47312e9
+Author: ThermalVB <wyatt.horejsi@gmail.com>
+Date:   Mon Jan 23 16:00:41 2017 -0800
+
+    commiting all dojoassignments DIRs
+
+C:\Users\Therm\Desktop\DojoAssignments>
