@@ -6,6 +6,7 @@
 #textsizeselector{
 text-align: right;
 color: White;
+margin-right: 5px;
 }
 #header{
 
@@ -50,8 +51,13 @@ background-color: #457DAD;
 border-radius: 25px;
 margin-left: 30px;
 }
+.option{
+display: inline-block;
+margin: 10px 20px;
+color: white;
+}
 #main1{
-width: auto;
+width: 970px;
 height: auto;
 }
 #sidebar{
@@ -61,11 +67,15 @@ display: inline-block;
 text-align: center;
 }
 #zentext{
+width: 400;
+height: auto;
 display: inline-block;
-
+text-align: center;
+color: white;
 }
 #main2{
-
+background-color: white;
+height: 250px;
 }
 #gettingstarted{
 
