@@ -1,0 +1,159 @@
+/*{
+  outline: 1px dotted red;
+}*/
+body{
+  width: 970px;
+}
+img{
+  display: inline-block;
+}
+#globe{
+  display: inline-block;
+}
+#top-header{
+  display: inline-block;
+  position: relative;
+  bottom: 40px;
+  font-family: sans-serif;
+}
+#bottom-header{
+  font-family: sans-serif;
+  font-weight: lighter;
+  vertical-align: middle;
+  background: #5283AC;
+  height: 30px;
+  color: white;
+  padding: 15px 0px 15px 15px;
+  margin-top: -50px;
+}
+#main{
+  background: -webkit-linear-gradient(#E3E3E3, #FFFFFF);
+  height: auto;
+  width: auto;
+}
+#sidebar{
+  margin-left: 10px;
+  width: 175px;
+  display: inline-block;
+}
+#but1{
+  width: auto;
+  height: 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  background-color: Blue;
+}
+#but2{
+  width: auto;
+  height: 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  background-color: Orange;
+}
+#sideimg{
+  background-image: url(images/ad_background.png);
+  padding: 10px;
+  margin-top: 50px;
+  outline-offset: 10px solid Gray;
+}
+#buttontext{
+  margin: 5px;
+  color: white;
+  text-align: center;
+}
+#ninja{
+  position: relative;
+  left: 36px;
+}
+#but3{
+  width: 125px;
+  height: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 10px 20px 10px;
+  margin: 20px 15px 20px 3px;
+  background-color: Blue;
+}
+#content{
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  height: auto;
+}
+#subheader{
+  display: inline-block;
+}
+#left-subheader{
+  display: inline-block;
+  vertical-align: top;
+  width: auto;;
+}
+#home{
+  position: relative;
+  bottom: 10px;
+}
+#dns{
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  bottom: 4px;
+}
+#phone{
+  display: inline-block;
+  position: relative;
+  left: 470px;
+  top: 13px;
+}
+#right-subheader{
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  left: 470px;
+  margin: 1px 0px 1px 0px;
+}
+.blue-headers{
+  color: blue;
+}
+.text{
+  margin: inherit;
+}
+#main-content{
+  border-top: 1px solid gray;
+  width: 750px;
+  margin-left: 20px;
+}
+li{
+  margin-bottom: 10px;
+}
+#svr{
+  margin-left: 200px;
+}
+#footer{
+  width: 600px;
+  height: auto;
+  position: relative;
+  left: 70px;
+  padding: 10px;
+  border-top: 5px solid Blue;
+  border-right: 5px solid Blue;
+  border-left: 5px solid Blue;
+}
+#html{
+  vertical-align: top;
+}
+#italic{
+  font-style: italic;
+}
+#subfoot{
+  display: inline-block;
+  width: 450px;
+}
+.ib{
+  display: inline-block;
+  margin: 10px;
+}
