@@ -1,0 +1,10 @@
+var piAppx = 3.14159;
+var answer = 42;
+var birthday = 02021985;
+var superSecret = 1/18;
+var alias = 'Clarke Kent';
+var doctor = 'Who?';
+var get = "Schwifty";
+var isHot = true;
+var canDrop = true;
+var arr = [];
