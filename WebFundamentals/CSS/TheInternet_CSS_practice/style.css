@@ -27,7 +27,7 @@ img{
   margin-top: -50px;
 }
 #main{
-  background: -webkit-linear-gradient(#E3E3E3, #FFFFFF);
+  background:-webkit-linear-gradient(#E3E3E3, #FFFFFF);
   height: auto;
   width: auto;
 }
