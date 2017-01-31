@@ -2,7 +2,7 @@
 function ifYouDontMind(hour,minute,period){
   var part1 = "";
   var part2 = "";
-  var modTime = 0
+  var modTime;
   if(minute < 30){
     part1 = "It's just after ";
     modTime = hour;
