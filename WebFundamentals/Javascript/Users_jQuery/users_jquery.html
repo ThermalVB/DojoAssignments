@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Users</title>
+    <link rel="stylesheet" type="text/css" href="users_jquery.css">
+<script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+<script type="text/javascript" src=users_jquery.js></script>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email address</th>
+        <th>Contact #</th>
+      </thead>
+      <tbody id="tablebody">
+
+      </tbody>
+    </table>
+    <h1>Add User</h1>
+    <form class="username" action="index.html" method="post">
+      First Name:<input id="first" type="text" name="firstname">
+      Last Name:<input id="last" type="text" name="lastname">
+      Email Address:<input id="email" type="text" name="emailaddress">
+      Contact No:<input id="number" type="text" name="contactno">
+    </form>
+    <button class="butt" type="submit">Add User</button>
+  </body>
+</html>
