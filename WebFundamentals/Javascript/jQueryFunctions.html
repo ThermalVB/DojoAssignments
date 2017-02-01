@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuerydemo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#butt").click(function(){
+          var text =$("#btn").text();
+          alert(text);
+          $("#butt").text("You Clicked Me");
+        })
+
+      });
+    </script>
+  </head>
+  <body>
+    <button id="btn">Click Me!</button>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My JQuery basic assignment!</title>
+    <link rel="stylesheet" style=jqueryfunctions.css href="jqueryfunctions.css">
+    <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <!-- <script type="text/javascript" src="jqueryfunction.js"></script> -->
+    <script type="text/javascript">
+    $(document).ready(function(){
+      alert("ARE YOU READY?!")
+      $("#slidetogglebutt").click(function(){
+        $("#slidetoggle > #corgi").slideToggle("slow");
+      });
+      $("#addclassbutt").click(function(){
+        console.log("this works");
+        $("#addclass > p").addClass("white");
+      });
+      $(".appendbutt").click(function(){
+        console.log("YAS");
+        $("#append > p").append("<p> WASSUPP PUPPIES</p>");
+      });
+      $("#addclassbutt").click(function(){
+        $("#addclass > h1").fadeOut("h1");
+        $("#runpups,#smile").show()
+      });
+      $("#slidetogglebutt").click(function(){
+        $("#slidetoggle > h1").hide();
+      });
+      $(".appendbutt").click(function(){
+        $("h1").after("<p>WANN@ BUY A C0RGi NOW?</p>");
+      });
+      $(".appendbutt").click(function(){
+        console.log("yup");
+        $("#photoshoot").toggle("slow");
+      });
+      $(".appendbutt").click(function(){
+        $("h1").before("<p>CUDDLE PARTY!</p>");
+      });
+      $("#footer").hover(function(){
+        console.log("HEYY!!");
+        $("#bestpup").slideDown("slow");
+      });
+      $("#footer").hover(function(){
+        console.log("NO!");
+        $("#secondpup").slideUp("slow");
+      });
+      // $("").(function(){
+      //   console.log("umm");
+      //   $("#").("");
+      // });
+
+    });
+    </script>
+  </head>
+  <body>
+    <div id="wrapper">
+
+    <div id="addclass">
+      <h1> Happiness is on its way!</h1>
+      <button id="addclassbutt">pups?</button>
+      <p> I know what you are thinking...,HOW ALEXIS? Because I DO. Puppies are the cure to happiness. Next time you are feeling sad and down about life, come here! All happy puppy thoughts are welcome.  </p>
+      <img id="smile"src=smile.gif>
+      <img id="runpups" src=runpups.gif>
+    </div>
+    <div id="slidetoggle">
+      <h1> AWWWW!</h1>
+      <button id="slidetogglebutt">UM.YAS</button>
+      <p> If you would like to visit a puppy party, call this number here. #555-050-8888 </p>
+      <img id="corgi" src=corgi.gif>
+    </div>
+    <div id="append">
+      <h1>“Dogs are not our whole life, but they make our lives whole.” </h1>
+      <button class="appendbutt">OMG!</button>
+      <p> I really hope that this made your day a whole lot better! </p>
+      <img id="photoshoot" src="photoshoot.jpg">
+    </div>
+    <div id="footer">
+      <img id="bestpup" src="bestpup.jpg">
+      <img id="secondpup" src="secondpup.jpg">
+    </div>
+
+  </body>
+</html>

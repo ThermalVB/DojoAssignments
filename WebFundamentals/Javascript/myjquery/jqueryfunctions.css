@@ -1,0 +1,88 @@
+*{
+width: 970px;
+height: auto;
+}
+#wrapper{
+background-color:#D2EEF7;
+width:1000px;
+height: auto;
+padding: 30px;
+}
+#addclass{
+border-bottom: 3px solid black;
+display: inline-block;
+text-align: center;
+background-color: #3F51B5;
+}
+
+#slidetoggle{
+border-bottom: 3px solid black;
+display: inline-block;
+text-align: center;
+background-color: #019EAE;
+}
+
+#append{
+border-bottom: 3px solid black;
+display: inline-block;
+text-align: center;
+background-color: #8BF5CD;
+}
+#footer{
+display: inline-block;
+background-color: blue;
+width: 970px;
+height: 100px;
+}
+
+button{
+  width:100px;
+  text-align: center;
+  position: relative;
+  right:400px;
+}
+#slidetoggle
+
+#corgi{
+  display: none;
+  width:300px;
+  height:250px;
+
+}
+#runpups{
+display:none;
+width:400px;
+height: 350px;
+
+}
+#smile{
+display:none;
+width:400px;
+height: 350px;
+
+}
+#photoshoot{
+  display: none;
+  width:400px;
+  height: 350px;
+
+}
+#bestpup{
+  display: none;
+  width:400px;
+  height: 350px;
+  position: relative;
+  left:200px;
+
+
+}
+#secondpup{
+  display: inline-block;
+  position: relative;
+  left:200px;
+  width:400px;
+  height: 350px;
+}
+.white{
+color: white;
+}
