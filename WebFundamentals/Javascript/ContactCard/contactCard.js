@@ -1,17 +1,24 @@
 $(document).ready(function(){
   //alert("ready");
-  $(document).on("click", ".btn", function(){
 
-    $(".username").submit(function(){
-      return false;
-    });
+  $(document).on("click", ".butt", function(){
 
     var first = $("#first").val();
     var last = $("#last").val();
-    var email = $("#email").val();
-    var number = $("#number").val();
-    console.log(first,last,email,number);
-    $("#tablebody").append("<tr><td>"+first+"</td><td>"+last+"</td><td>"+email+"</td><td>"+number+"</td></tr>");
+    var description = $("#description").val();
+    console.log(first,last,description);
+    $("#cards").prepend("<div class='card1'><h1>"+first+" "+last+"</h1><button class='flip' style='button'>Flip</button></div>");
+    $("#cards").append("<div class='card2'><h1>"+description+"</h1><button class='flip' style='button'>Flip</button></div>");
 
   });
+
+  $(document).on("click", ".flip", function(){
+    $(".card1").slideToggle(function(){
+    });
+    $(".card2").slideToggle(function(){
+    });
+    $(".card2").css({"display": "inline-block"
+    });
+  });
+
 });
