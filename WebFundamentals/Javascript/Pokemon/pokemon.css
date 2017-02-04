@@ -1,0 +1,22 @@
+div{
+  display: inline-block;
+}
+#pokemon{
+  width: 75%;
+}
+#pokedex{
+  width: 20%;
+  height: 400px;
+  border-top: 15px solid red;
+  border-right: 15px solid red;
+  border-left: 15px solid red;
+  border-bottom: 25px solid red;
+  position: fixed;
+  right: 25px;
+  top: 15px;
+}
+img{
+  height: 124px;
+  width: 124px;
+  display: inline-block;
+}

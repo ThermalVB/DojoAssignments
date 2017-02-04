@@ -13,12 +13,11 @@ $(document).ready(function(){
   });
 
   $(document).on("click", ".flip", function(){
-    $(".card1").slideToggle(function(){
-    });
-    $(".card2").slideToggle(function(){
-    });
-    $(".card2").css({"display": "inline-block"
-    });
+    $(this).siblings().toggle();
+    // $(".card2").slideToggle(function(){
+    // });
+    // $(".card2").css({"display": "inline-block"
+    // });
   });
 
 });
