@@ -15,6 +15,9 @@ div{
   right: 25px;
   top: 15px;
 }
+#pokedex > h1, h4, p{
+  margin: 10px;
+}
 img{
   height: 124px;
   width: 124px;
