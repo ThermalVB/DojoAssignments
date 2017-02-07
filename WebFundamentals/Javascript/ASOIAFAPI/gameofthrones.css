@@ -1,0 +1,41 @@
+*{
+  margin:0px;
+  display: inline-block;
+}
+#wrapper{
+  width: 100%;
+  height:auto;
+  background-color:#310D0E;
+  color:white;
+
+}
+.boxes img{
+  width:250px;
+  height: 200px;
+}
+.boxes{
+border: 1px solid grey;
+padding: 10px;
+margin-left: 43px;
+margin-top: 20px;
+}
+
+#main{
+border:1px solid grey;
+width: 1000px;
+height: 200px;
+margin-top: 80px;
+position: relative;
+margin-left: 210px;
+}
+
+#quiz{
+  position: relative;
+
+
+}
+
+#triva{
+  position: relative;
+  top: 230px;
+}

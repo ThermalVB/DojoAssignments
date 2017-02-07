@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weather</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(document).on("click", "#submit", function(){
+
+          var city = $("#City").val();
+          console.log(city);
+          $.get("http://api.openweathermap.org/data/2.5/weather?q="+ city +",usa&&appid=63399d165ee614680803f445613226d2", function(data) {
+
+          $("#city").html("<p>"+city+"</p>")
+          $("#temp").html("<p>"+data.main.temp+"</p>")
+
+          }, 'json');
+          return false;
+          });
+
+
+        });
+
+    </script>
+  </head>
+  <body>
+    <div class="input">
+      <form id="form1" action="index.html" method="post">
+        Search Weather in:<input type="text" id="City" value="">
+        <input id="submit" type="submit" value="Submit">
+      </form>
+    </div>
+    <div class="result">
+      <h1>Temperature in</h1>
+      <h1 id="city"></h1>
+      <h1>is currently:</h1>
+      <h1 id="temp"></h1>
+      <h1>degrees Kelvin</h1>
+    </div>
+
+  </body>
+</html>
