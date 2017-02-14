@@ -1,0 +1,8 @@
+use mydb;
+INSERT into cities (name, created_at, updated_at, states_id)
+values ('Eugene', now(), now(), 9);
+SELECT * FROM states;
+SELECT * FROM cities;
+INSERT into businesses (name, owner, created_at, updated_at)
+values ('UpDown', 'Chakko', now(), now());
+SELECT * FROM businesses;
