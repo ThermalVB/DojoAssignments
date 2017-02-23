@@ -11,21 +11,20 @@
 <!--<img src="{{ url_for('static', filename='img/my_img.png') }}">-->
   </head>
   <body>
-    {{ all_users }}
+    {{ all_friends }}
     <h1>Friends List:</h1>
     <!-- with all the data we can then construct a more structured output -->
     {% for friends in all_friends: %}
-       id = {{ friends['id']}}
+       <!-- id = {{ friends['id']}} -->
        <p>ID: {{ friends['id']  }}</p>
        <p>First Name: {{ friends['first_name'] }}</p>
        <p>Last Name: {{ friends['last_name'] }}</p>
        <p>Occupation: {{ friends['occupation'] }}</p>
-       <form class="edit" action="friends/"{{  friends['id']  }}"/edit" method="GET">
-         <input type="submit" name="edit" value="Edit">
-       </form>
+
+      <!-- <form class="edit" action="edit/{{ friends['id']  }}" methods="GET">
+        <input type="submit" name=edit value="Edit"> -->
+      <a href="edit/{{ friends['id']  }}">Edit</a>
        <hr>
     {% endfor %}
-
-
   </body>
 </html>

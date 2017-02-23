@@ -1,0 +1,1 @@
+[v]|(ss)|e\b|b.b|b*b|[a.*e.*i.*o.*u.*]|[regularexpression]|(.)\1

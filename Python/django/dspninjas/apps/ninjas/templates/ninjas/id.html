@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    {% load staticfiles %}
+  </head>
+  <body>
+    <script type="text/javascript">
+    color = {{id}};
+    str = "{{"
+    if({{id}} == blue||{{id}} = red||{{id}} = orange||{{id}} = purple){
+      str += color+"}}";
+    }
+    else{
+      str += april+"}}";
+    }
+
+    </script>
+    <img src="{% static 'images/april.jpg' %}" alt="">
+  </body>
+</html>

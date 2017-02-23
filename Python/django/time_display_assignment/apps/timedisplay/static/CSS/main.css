@@ -1,0 +1,8 @@
+div{
+  border: 1px solid black;
+  text-align: center;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  margin: 20px;
+}

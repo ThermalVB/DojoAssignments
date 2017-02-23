@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form action="/index" method="post">
+     {% csrf_token %}
+     <h1>String: {{  request.session.string  }}</h1>
+     <h3>Generated {{  request.session.count  }} times</h3>
+    </form>
+  </body>
+</html>

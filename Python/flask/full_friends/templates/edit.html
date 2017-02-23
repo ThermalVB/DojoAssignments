@@ -5,6 +5,23 @@
     <title></title>
   </head>
   <body>
+    {{  friends  }}
+    {% for friends in friends: %}
+       <!-- id = {{ friends['id']}} -->
+       <p>ID: {{ friends['id']  }}</p>
+       <p>First Name: {{ friends['first_name'] }}</p>
+       <p>Last Name: {{ friends['last_name'] }}</p>
+       <p>Occupation: {{ friends['occupation'] }}</p>
 
+
+    <h1>New Values:</h1>
+    <form class="update" action="index.html" method="GET">
+      First Name:<input type="text" name="first_name" value="">
+      Last Name:<input type="text" name="last_name" value="">
+      Occupation:<input type="text" name="occupation" value="">
+
+    </form>
+    <a href="/friends/{{ friends['id']  }}">Update</a>
+    {% endfor %}
   </body>
 </html>
