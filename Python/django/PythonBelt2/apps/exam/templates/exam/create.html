@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <a href="dashboard">Home</a>
+    <a href="logout">Log Out</a>
+    <h1>Create a new Wish List item:</h1>
+    <form class="create_item" action="create_item" method="post">
+      {% csrf_token %}
+      Item/Product:<input type="text" name="item_name" value="">
+      <input type="submit" name="" value="Add">
+    </form>
+  </body>
+</html>

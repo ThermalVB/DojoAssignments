@@ -8,12 +8,26 @@ def group(request):
     return render(request, "ninjas/group.html")
 
 def id(request, id):
-    context = {
-    "id" : id,
-    "purple" : 'don.gif',
-    "red" : 'rap.jpg',
-    "blue" : 'leo.jpg',
-    "orange" : 'mic.gif',
-    "april" : 'april.jpg'
-    }
+    if id == 'purple':
+        context = {
+        'image' : 'don.gif'
+        }
+    elif id == 'red':
+        context = {
+        'image' : 'rap.jpg'
+        }
+    elif id == 'blue':
+        context = {
+        'image' : 'leo.jpg'
+        }
+    elif id == 'orange':
+        context = {
+        'image' : 'mic.gif'
+        }
+    else:
+        context = {
+        'image' : 'april.jpg'
+        }
+    print id
+    print context
     return render(request, "ninjas/id.html", context)

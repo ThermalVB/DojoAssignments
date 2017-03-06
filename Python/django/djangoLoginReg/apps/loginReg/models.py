@@ -49,36 +49,48 @@ class UserManager(models.Manager):
             user = self.create(
             first_name = postData['first_name'],
             last_name = postData['last_name'],
+            email = postData['email'],
             password = hashed_password)
             modelsResponse['isRegistered'] = True
             modelsResponse['user'] = user
 
-            print "user object????",modelsResponse['user']
+            print "user object????"
+
+            modelsResponse['user'] = user
+
+
 
         return modelsResponse
 
     def login_user(self, postData):
-        user = self.filter(email = postData['email'])
+        user = User.objects.filter(email = postData['email'])
         errors = []
         modelsResponse = {}
         if not user:
             #invalid email
+            print "inside"
             errors.append('Invalid email')
+            modelsResponse['isLoggedIn'] = False
+            return modelsResponse
 
         else:
             #found user, check passwords
             if bcrypt.checkpw(postData['password'].encode(), user[0].password.encode()):
                 #login user
                 modelsResponse['isLoggedIn'] = True
-                modelsResponse['user'] = user
+                modelsResponse['user'] = user[0]
+                return modelsResponse
 
             else:
                 #invalid pw/email
                 errors.append('Invalid email password combination')
+                return modelsResponse
 
         if errors:
             modelsResponse['isLoggedIn'] = False
             modelsResponse['errors'] = errors
+
+        return modelsResponse
 
 class User(models.Model):
     first_name = models.CharField(max_length = 50)

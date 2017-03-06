@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <a href="logout">Log Out</a>
+    <h1>Welcome {{ request.session.name }}!</h1>
+    {% if messages %}
+      {% for message in messages %}
+        <p>{{ message }}</p>
+      {% endfor %}
+    {% endif %}
+    <h1>These are your appointments for today, {{  request.session.date }}:</h1>
+    <table>
+      <tr><th>Tasks:<th>Time:<th>Date Status:<th>Action:
+        {% for value in my_appts_today %}
+          <tr>
+            <td>{{ value.task }}</td>
+            <td>{{ value.time }}</td>
+            <td>{{ value.status }}</td>
+          {% if value.status == 'Pending' %}
+            <td><a href='update/{{  value.id  }}'>Edit</a></td>
+            <td><a href='delete_appt/{{  value.id  }}'>Delete</a></td>
+          {% endif %}
+          </tr>
+        {% endfor %}
+    </table>
+    <h1>Your upcoming appointments:</h1>
+    <table>
+      <tr><th>Tasks:<th>Date Status:
+        {% for value in my_appts_today %}
+          <tr>
+            <td>{{ value.task }}</td>
+            <td>{{ value.date }}</td>
+            <td>{{ value.time }}</td>
+          </tr>
+        {% endfor %}
+    </table>
+    <form class="create_appt" action="create_appt" method="post">
+      {% csrf_token %}
+      Date:<input type="date" name="date" value="">
+      Time:<input type="time" name="time" value="">
+      Task:<input type="text" name="task" value="">
+      <input type="submit" name="" value="Add">
+    </form>
+  </body>
+</html>

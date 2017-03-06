@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <a href="logout">Log Out</a>
+    <h1>Welcome {{ request.session.username }}!</h1>
+    <table>
+      <tr><th>Item:<th>Added by:<th>Date Added:<th>Action:
+        {% for value in my_items %}
+          <tr>
+            <td><a href="wish_items/{{  value.id  }}">{{ value.item_name }}</a></td>
+            <td>{{ value.added_by.username }}</td>
+            <td>{{ value.date_added }}</td>
+          {% if value.added_by.username == request.session.username %}
+            <td><a href='remove_item/{{  value.id  }}'>Delete Item</a></td>
+          {% else %}
+            <td><a href='remove_item/{{  value.id  }}'>Remove Item</a></td>
+          {% endif %}
+          </tr>
+        {% endfor %}
+    </table>
+    <h1>Other Users' Wish Lists</h1>
+    <table>
+      <tr><th>Item:<th>Added by:<th>Date Added:<th>Action:
+        {% for value in others_items %}
+          {% if value not in my_items %}
+            <tr>
+              <td><a href="wish_items/{{  value.id  }}">{{ value.item_name }}</a></td>
+              <td>{{ value.added_by.username }}</td>
+              <td>{{ value.date_added }}</td>
+              <td><a href='add_my_item/{{  value.id  }}'>Add Item to my wishlist</a></td>
+            </tr>
+          {% endif %}
+        {% endfor %}
+    </table>
+    <a href="create">Add Item</a>
+  </body>
+</html>
