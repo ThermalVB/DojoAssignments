@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <a href="/dashboard">Home</a>
+    <a href="/logout">Log Out</a>
+    <form action="/update_appt/{{id}}" method="post">
+      {% csrf_token %}
+      Task:<input type="text" name="task" value="{{Task}}">
+      Status:<select name="status" value={{Status}}>
+        <option value="DONE">Done</option>
+        <option value="PENDING">Pending</option>
+        <option value="MISSED">Missed</option>
+      </select>
+      Date:<input type="date" name="date" value={{Date}}>
+      Time:<input type="time" name="time" value={{Time}}>
+      <input type="submit" name="" value="Update">
+    </form>
+  </body>
+</html>
