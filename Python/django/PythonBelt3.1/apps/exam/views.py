@@ -24,7 +24,8 @@ def dashboard(request):
     user = request.session['user_id']
     date = datetime.date.today()
     context = {
-    "my_appts_today" : Appt.objects.filter(user = user)|Appt.objects.filter(date = date),
+    "my_appts_today" : Appt.objects.filter(user = user,date = date),
+    #|Appt.objects.filter(date = date),
     "my_appts_future" : Appt.objects.filter(user = user).exclude(date = date),
     "today" : date
     }
@@ -73,8 +74,8 @@ def update(request, id):
     context = {
     "Task" : appt.task,
     "Status" : appt.status,
-    "Date" : appt.date,
-    "Time" : appt.time,
+    "Date" : appt.date.__str__(),
+    "Time" : appt.time.__str__(),
     "id" : id
     }
     print id

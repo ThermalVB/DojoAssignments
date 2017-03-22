@@ -1,0 +1,11 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>>Here are the awesome quotes!</h1>
+@{
+    foreach(var quote in allQuotes)
+    {
+        <p>""""+@quote.quoteText+""""</p>;
+        <p>"-"+@quote.users.name
+    }
+}

@@ -11,11 +11,13 @@ class UserManager(models.Manager):
         #store possbile failed validations
         errors = []
         # dob verification
-        now = datetime.datetime.now()
-        
+        now = datetime.date.today()
+        now = now.strftime("%Y-%m-%d")
         inputdate = postData['date_of_birth']
-        now = now.__str__()
-        inputdate = inputdate.__str__()
+
+        print now
+        print inputdate
+
 
         if len(postData['name']) < 2:
             errors.append("Name must be at least 2 characters")
@@ -27,8 +29,8 @@ class UserManager(models.Manager):
             errors.append("Password must be at least 8 characters")
         if not postData['password'] == postData['confirm_password']:
             errors.append("Passwords must match")
-        if (postData['date_of_birth'] > datetime.date.today()):
-            errors.append("Date of Birth must be prior to today")
+        if (now < inputdate):
+            errors.append("You must exist to make appointments")
         user = User.objects.filter(email= postData['email'])
         if user:
             errors.append("Email is already registered")

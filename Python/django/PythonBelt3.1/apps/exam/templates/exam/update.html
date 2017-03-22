@@ -10,12 +10,24 @@
     <form action="/update_appt/{{id}}" method="post">
       {% csrf_token %}
       Task:<input type="text" name="task" value="{{Task}}">
-      Status:<select name="status" value={{Status}}>
-        <option value="DONE">Done</option>
+      Status:<select name="status" value="">
+        {% if Status == "Done" %}
+        <option value="DONE" selected>Done</option>
         <option value="PENDING">Pending</option>
         <option value="MISSED">Missed</option>
+        {% endif %}
+        {% if Status == "Pending" %}
+        <option value="DONE">Done</option>
+        <option value="PENDING" selected>Pending</option>
+        <option value="MISSED">Missed</option>
+        {% endif %}
+        {% if Status == "Missed" %}
+        <option value="DONE">Done</option>
+        <option value="PENDING">Pending</option>
+        <option value="MISSED" selected>Missed</option>
+        {% endif %}
       </select>
-      Date:<input type="date" name="date" value={{Date}}>
+      Date:<input type="date" name="date" value="{{Date}}">
       Time:<input type="time" name="time" value={{Time}}>
       <input type="submit" name="" value="Update">
     </form>

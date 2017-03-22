@@ -1,0 +1,48 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@{
+    foreach(var error in ViewBag.adderrors)
+    {
+        //If there are any errors for a field...
+        if(@error.Errors.Count > 0)
+        {
+            // We show the first error for that field
+            <p>@error.Errors[0].ErrorMessage</p>
+        }
+    }
+}
+
+@model restaurantreviews.Models.Review
+<!--<h1>FUCK YOU ASP.NET</h1>-->
+<form asp-controller="Home" asp-action="Create" method="post">
+    <div class=row>
+            <h3 class="col-xs-12 col-md-12">Write a new Review</h3>
+    </div>
+    <label asp-for="UserName" class="col-xs-12 col-md-2 ">Reviewer Name:</label>
+    <input asp-for="UserName" class="col-xs-12 col-md-2"/><br><br>
+
+
+   <label asp-for="RestoName" class="col-xs-12 col-md-2">Resturant Name:</label>
+    <input asp-for="RestoName" class="col-xs-12 col-md-3"/><br><br>
+
+
+   <label asp-for="ReviewText" class="col-xs-12 col-md-2">Review:</label>
+    <input asp-for="ReviewText" class="col-xs-12 col-md-3"/><br><br>
+
+   <label asp-for="DateOfVisit" class="col-xs-12 col-md-2">Date of visit:</label>
+    <input asp-for="DateOfVisit" type="date" class="col-xs-12 col-md-2"/><br><br>
+
+   <label asp-for="Rating" class="col-xs-12 col-md-2">Rating:</label>
+    <select asp-for="Rating" class="col-xs-12 col-md-1">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select><br><br>
+  
+    <button type="submit">Submit</button>  
+    <div asp-validation-summary="All"></div>
+  
+</form>
